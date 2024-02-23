@@ -6,7 +6,7 @@
 }
 body {
   padding: 60px;
-  background-color: #192a56;
+  background-color: #383535;
   color: #f5f6fa;
 }
 .container {
@@ -48,6 +48,8 @@ header .profile-avatar {
   text-align: center;
 }
 .profile-bio .profile-bio-nome {
+  align-items: center;
+  justify-content: center;
   font-size: 16px;
   margin-bottom: 18px;
 }
@@ -68,9 +70,18 @@ header .profile-avatar {
 .social-links li {
   list-style: none;
   margin-right: 20px;
+  color: #cbf23d;
 }
-.social-links li img:hover {
+.social-links li a {
+  text-decoration: none;
+}
+.social-links li a img {
+  transition: transform 0.3s ease;
+}
+.social-links li a img:hover {
   transform: scale(1.5);
+  background-color: #cbf23d;
+  color: #d9d9d9;
 }
 .projeto-lista {
   margin-top: 32px;
@@ -81,7 +92,7 @@ li {
 .lista-item a {
   text-transform: none;
   display: block;
-  background-color: #40739e;
+  background-color: #363434;
   padding: 16px 20px;
   margin-bottom: 16px;
   text-align: center;
@@ -92,9 +103,9 @@ li {
   transition: all ease 0.3s;
 }
 .lista-item a:hover {
-  color: #40739e;
+  color: #d9d9d9;
   background-color: transparent;
-  color: #f5f6fa;
+  color: #cbf23d;
 }
 .title_espace {
   margin: 12px;
