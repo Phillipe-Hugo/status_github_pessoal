@@ -1,3 +1,4 @@
+
 @import "variaveis.less";
 @breakpointMobile: ~"(max-width: 767px)";
 @breakpointTablet: ~"(min-width: 768px) and (max-width: 1023px";
@@ -50,7 +51,11 @@ header {
 }
 .profile-bio {
     text-align: center;
+    
     .profile-bio-nome {
+        
+        align-items: center;
+        justify-content: center;
         font-size: 16px;
         margin-bottom: 18px;
     }
@@ -69,12 +74,21 @@ header {
     max-width: 240px;
     width: 100%;
     margin: 0 auto;
+
     li {
         list-style: none;
         margin-right: 20px;
-        img {
-            &:hover{
-                transform: scale(1.5);
+        color: #cbf23d;
+
+        a {
+            text-decoration: none; 
+            img {
+                transition: transform 0.3s ease; 
+                &:hover {
+                    transform: scale(1.5);
+                    background-color: #cbf23d; 
+                    color: #d9d9d9;
+                }
             }
         }
     }
@@ -92,7 +106,7 @@ li {
     a {
         text-transform: none;
         display: block;
-        background-color: #40739e;
+        background-color: #363434;
         padding: 16px 20px;
         margin-bottom: 16px;
         text-align: center;
@@ -103,9 +117,9 @@ li {
         transition: all ease .3s;
 
         &:hover {
-             color: #40739e;
+             color: #d9d9d9;
              background-color: transparent;
-             color: #f5f6fa;
+             color: #cbf23d;
         }
     }
 }
